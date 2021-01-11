@@ -1,0 +1,142 @@
+h1,
+h2,
+p,
+span {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #373b40;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+}
+
+/* header */
+
+header {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5rem;
+  background-color: #585d65;
+  border-radius: 8rem;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: 2rem 4rem;
+}
+
+.header-left-side,
+.header-right-side {
+  margin: auto 4rem;
+  display: flex;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.header-logo img {
+  max-width: 3rem;
+  margin: auto;
+  margin-right: 1rem;
+}
+
+.header-name {
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-item {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+/* main */
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.photo {
+  height: 100vh;
+  width: 60%;
+  background: url(/assets/imgs/photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.content {
+  margin-top: 10rem;
+  margin-left: 2rem;
+  width: 70%;
+}
+
+.content {
+  width: 60%;
+}
+
+.content p {
+  max-width: 25rem;
+  margin: 2rem 0;
+}
+
+.content h1 {
+  max-width: 15rem;
+  margin-top: 2rem;
+}
+
+.round-name {
+  background-color: #373b40;
+  height: 20rem;
+  border-top-left-radius: 15rem;
+  border-bottom-left-radius: 15rem;
+  display: flex;
+  margin-left: -12rem;
+}
+
+.round-name span {
+  margin: auto 0;
+  margin-left: 3rem;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid #727272;
+  border-radius: 10rem;
+  min-width: 3.3rem;
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+/* social */
+.social {
+  width: 5%;
+  border-left: 1px solid #727272;
+}
