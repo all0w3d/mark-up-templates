@@ -50,7 +50,7 @@ header {
   font-size: 1.2rem;
 }
 
-nav {
+nav ul {
   display: flex;
   flex-direction: row;
   font-weight: bold;
@@ -60,6 +60,20 @@ nav {
 .nav-item {
   margin: 0 1rem;
   cursor: pointer;
+  list-style-type: none;
+  color: white;
+  
+}
+
+.nav-item a {
+  text-decoration: 0;
+  color: white;
+}
+
+.nav-item a:hover {
+  color: #e07f47;
+  transition: .2s;
+  
 }
 
 /* main */
@@ -94,9 +108,18 @@ main {
   margin: 2rem 0;
 }
 
-.content h1 {
-  max-width: 15rem;
-  margin-top: 2rem;
+
+#typed {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #e07f47;
+}
+
+.typed-cursor {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e07f47;
 }
 
 .round-name {
@@ -131,6 +154,12 @@ button {
   min-width: 3.3rem;
 }
 
+button:hover {
+  border-color: #e07f47;
+  color: #e07f47;
+  transition: .2s;
+}
+
 .rotate {
   transform: rotate(-180deg);
 }
@@ -140,3 +169,8 @@ button {
   width: 5%;
   border-left: 1px solid #727272;
 }
+
+
+
+/* hover */
+
