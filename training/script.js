@@ -1,8 +1,5 @@
+let num = prompt("Vvedite chislo", "");
 
+let answer = num > 0 ? "1" : num < 0 ? "-1" : "0";
 
-let a = prompt("Первое число?", 1);
-let b = prompt("Второе число?", 2);
-
-alert(+a + +b); // 123
-
-// ................
+alert(answer);

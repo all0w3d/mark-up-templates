@@ -1,0 +1,264 @@
+[33mcommit f75b4219578d4944cd792cb4d1ab4a8ea3898992[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: IvanRylkov <all0w3d@gmail.com>
+Date:   Thu Jan 14 22:10:42 2021 +0200
+
+    edits
+
+[1mdiff --git a/MyWebSite/assets/imgs/photo.jpg b/MyWebSite/assets/imgs/photo.jpg[m
+[1mindex 4c20415..7e743f6 100644[m
+Binary files a/MyWebSite/assets/imgs/photo.jpg and b/MyWebSite/assets/imgs/photo.jpg differ
+[1mdiff --git a/MyWebSite/assets/styles/style.css b/MyWebSite/assets/styles/style.css[m
+[1mindex e1f72b8..b7acd62 100644[m
+[1m--- a/MyWebSite/assets/styles/style.css[m
+[1m+++ b/MyWebSite/assets/styles/style.css[m
+[36m@@ -36,6 +36,10 @@[m [mheader {[m
+   display: flex;[m
+ }[m
+ [m
+[32m+[m[32m.header-left-side {[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m
+ .header-logo {[m
+   display: flex;[m
+ }[m
+[36m@@ -62,7 +66,6 @@[m [mnav ul {[m
+   cursor: pointer;[m
+   list-style-type: none;[m
+   color: white;[m
+[31m-  [m
+ }[m
+ [m
+ .nav-item a {[m
+[36m@@ -72,8 +75,7 @@[m [mnav ul {[m
+ [m
+ .nav-item a:hover {[m
+   color: #e07f47;[m
+[31m-  transition: .2s;[m
+[31m-  [m
+[32m+[m[32m  transition: 0.2s;[m
+ }[m
+ [m
+ /* main */[m
+[36m@@ -85,30 +87,28 @@[m [mmain {[m
+ [m
+ .photo {[m
+   height: 100vh;[m
+[31m-  width: 60%;[m
+[32m+[m
+[32m+[m[32m  width: 40%;[m
+   background: url(/assets/imgs/photo.jpg);[m
+   background-repeat: no-repeat;[m
+   background-position: center;[m
+   background-size: cover;[m
+   overflow: hidden;[m
+[32m+[m[32m  position: fixed;[m
+[32m+[m[32m  z-index: -1;[m
+ }[m
+ [m
+ .content {[m
+   margin-top: 10rem;[m
+[31m-  margin-left: 2rem;[m
+[31m-  width: 70%;[m
+[31m-}[m
+[31m-[m
+[31m-.content {[m
+[32m+[m[32m  margin-left: 44%;[m
+   width: 60%;[m
+ }[m
+ [m
+[31m-.content p {[m
+[32m+[m[32m.general-text {[m
+   max-width: 25rem;[m
+   margin: 2rem 0;[m
+ }[m
+ [m
+[31m-[m
+ #typed {[m
+   font-size: 2rem;[m
+   font-weight: bold;[m
+[36m@@ -157,20 +157,71 @@[m [mbutton {[m
+ button:hover {[m
+   border-color: #e07f47;[m
+   color: #e07f47;[m
+[31m-  transition: .2s;[m
+[32m+[m[32m  transition: 0.2s;[m
+ }[m
+ [m
+ .rotate {[m
+   transform: rotate(-180deg);[m
+ }[m
+ [m
+[32m+[m[32m.general {[m
+[32m+[m[32m  border-bottom: 1px solid #727272;[m
+[32m+[m[32m  padding-bottom: 10rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header {[m
+[32m+[m[32m  font-size: 3rem;[m
+[32m+[m[32m  font-weight: bold;[m
+[32m+[m[32m  margin-top: 3rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.header-2 {[m
+[32m+[m[32m  color: #e07f47;[m
+[32m+[m[32m  font-size: 1.5rem;[m
+[32m+[m[32m  margin-bottom: 2rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.text {[m
+[32m+[m[32m  max-width: 45rem;[m
+[32m+[m[32m}[m
+[32m+[m
+ /* social */[m
+ .social {[m
+   width: 5%;[m
+   border-left: 1px solid #727272;[m
+ }[m
+ [m
+[32m+[m[32m/* hover */[m
+ [m
+[32m+[m[32m.social svg {[m
+[32m+[m[32m  fill: white;[m
+[32m+[m[32m  bottom: 3rem;[m
+[32m+[m[32m  position: fixed;[m
+[32m+[m[32m  margin-left: 1rem;[m
+[32m+[m[32m  border: 1px solid white;[m
+[32m+[m[32m  width: 1.5rem;[m
+[32m+[m[32m  height: 1.5rem;[m
+[32m+[m[32m  padding: 1rem;[m
+[32m+[m[32m  border-radius: 1.9rem;[m
+[32m+[m[32m  overflow: visible;[m
+[32m+[m[32m}[m
+ [m
+[31m-/* hover */[m
+[32m+[m[32m.social svg:hover {[m
+[32m+[m[32m  fill: #e07f47;[m
+[32m+[m[32m  border-color: #e07f47;[m
+[32m+[m[32m  transition: 0.3s;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m}[m
+ [m
+[32m+[m[32m.social {[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.linkdn svg {[m
+[32m+[m[32m  bottom: 13rem;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m.facebook svg {[m
+[32m+[m[32m  bottom: 8rem;[m
+[32m+[m[32m}[m
+[1mdiff --git a/MyWebSite/index.html b/MyWebSite/index.html[m
+[1mindex bd31bfe..733366c 100644[m
+[1m--- a/MyWebSite/index.html[m
+[1m+++ b/MyWebSite/index.html[m
+[36m@@ -14,7 +14,6 @@[m
+     <!-- font-family: 'Quicksand', sans-serif; -->[m
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">[m
+     <!-- font-family: 'Raleway', sans-serif; -->[m
+[31m-[m
+ </head>[m
+ [m
+ <body>[m
+[36m@@ -34,7 +33,6 @@[m
+                     <li class="nav-item"><a href="">Portfolio</a></li>[m
+                     <li class="nav-item"><a href="">Contacts</a></li>[m
+                     <li class="nav-item"><a href="">Download CV</a></li>[m
+[31m-                    [m
+                 </ul>[m
+             </nav>[m
+         </div>[m
+[36m@@ -42,37 +40,63 @@[m
+     <main>[m
+         <div class="photo"></div>[m
+         <div class="content">[m
+[31m-            <div class="round-name">[m
+[31m-                <span>Ivan Rylkov</span>[m
+[31m-            </div>[m
+[31m-[m
+[31m-            <div id="typed-strings">[m
+[31m-                <h1>FrontEnd Web Developer</h1>[m
+[31m-                <h1>Work Fulltime</h1>[m
+[31m-            </div>[m
+[31m-            <span id="typed"></span>[m
+[31m-[m
+[31m-            <p>Hello! I am Web Developer from United States, New York. I have rich experience in web site design and[m
+[31m-                building, also I am good at wordpress. I love to talk with you about our unique.</p>[m
+[31m-            <div class="top-content-button-group">[m
+[31m-                <button>Contact Me</button>[m
+[31m-                <button class="rotate"> ^ </button>[m
+[32m+[m[32m            <div class="general">[m
+[32m+[m[32m                <div class="round-name">[m
+[32m+[m[32m                    <span>Ivan Rylkov</span>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <div id="typed-strings">[m
+[32m+[m[32m                    <h1>FrontEnd Web Developer</h1>[m
+[32m+[m[32m                    <h1>Work Fulltime</h1>[m
+[32m+[m[32m                </div>[m
+[32m+[m[32m                <span id="typed"></span>[m
+[32m+[m[32m                <p class="general-text">Hello! I am Web Developer from United States, New York. I have rich experience[m
+[32m+[m[32m                    in web site design and[m
+[32m+[m[32m                    building, also I am good at wordpress. I love to talk with you about our unique.</p>[m
+[32m+[m[32m                <div class="top-content-button-group">[m
+[32m+[m[32m                    <button>Contact Me</button>[m
+[32m+[m[32m                    <button class="rotate"> ^ </button>[m
+[32m+[m[32m                </div>[m
+             </div>[m
+[32m+[m[32m            <h1 class="header">About Me</h1>[m
+[32m+[m[32m            <h2 class="header-2">My Story</h2>[m
+[32m+[m[32m            <p class="text">Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue[m
+[32m+[m[32m                blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque posuere. Praesent turpis. Aenean[m
+[32m+[m[32m                posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.[m
+[32m+[m[32m            </p>[m
+[32m+[m[32m            <p class="text">[m
+[32m+[m[32m                Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit[m
+[32m+[m[32m                nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit[m
+[32m+[m[32m                non, turpis.</p>[m
+         </div>[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+     </main>[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+     <div class="social">[m
+[32m+[m[32m        <div class="linkdn">[m
+[32m+[m[32m            <svg id="Bold" enable-background="new 0 0 24 24" height="3rem" viewBox="0 0 24 24" width="1rem"[m
+[32m+[m[32m                xmlns="http://www.w3.org/2000/svg">[m
+[32m+[m[32m                <path[m
+[32m+[m[32m                    d="m23.994 24v-.001h.006v-8.802c0-4.306-.927-7.623-5.961-7.623-2.42 0-4.044 1.328-4.707 2.587h-.07v-2.185h-4.773v16.023h4.97v-7.934c0-2.089.396-4.109 2.983-4.109 2.549 0 2.587 2.384 2.587 4.243v7.801z" />[m
+[32m+[m[32m                <path d="m.396 7.977h4.976v16.023h-4.976z" />[m
+[32m+[m[32m                <path[m
+[32m+[m[32m                    d="m2.882 0c-1.591 0-2.882 1.291-2.882 2.882s1.291 2.909 2.882 2.909 2.882-1.318 2.882-2.909c-.001-1.591-1.292-2.882-2.882-2.882z" />[m
+[32m+[m[32m            </svg>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="facebook">[m
+[32m+[m[32m            <svg id="Bold" enable-background="new 0 0 24 24" height="3rem" viewBox="0 0 24 24" width="1rem"[m
+[32m+[m[32m                xmlns="http://www.w3.org/2000/svg">[m
+[32m+[m[32m                <path[m
+[32m+[m[32m                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />[m
+[32m+[m[32m            </svg>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="instagram">[m
+[32m+[m[32m            <svg id="Bold" enable-background="new 0 0 24 24" height="3rem" viewBox="0 0 24 24" width="1rem"[m
+[32m+[m[32m                xmlns="http://www.w3.org/2000/svg">[m
+[32m+[m[32m                <path[m
+[32m+[m[32m                    d="m12.004 5.838c-3.403 0-6.158 2.758-6.158 6.158 0 3.403 2.758 6.158 6.158 6.158 3.403 0 6.158-2.758 6.158-6.158 0-3.403-2.758-6.158-6.158-6.158zm0 10.155c-2.209 0-3.997-1.789-3.997-3.997s1.789-3.997 3.997-3.997 3.997 1.789 3.997 3.997c.001 2.208-1.788 3.997-3.997 3.997z" />[m
+[32m+[m[32m                <path[m
+[32m+[m[32m                    d="m16.948.076c-2.208-.103-7.677-.098-9.887 0-1.942.091-3.655.56-5.036 1.941-2.308 2.308-2.013 5.418-2.013 9.979 0 4.668-.26 7.706 2.013 9.979 2.317 2.316 5.472 2.013 9.979 2.013 4.624 0 6.22.003 7.855-.63 2.223-.863 3.901-2.85 4.065-6.419.104-2.209.098-7.677 0-9.887-.198-4.213-2.459-6.768-6.976-6.976zm3.495 20.372c-1.513 1.513-3.612 1.378-8.468 1.378-5 0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453 0-5.525-.567-9.504 4.978-9.788 1.274-.045 1.649-.06 4.856-.06l.045.03c5.329 0 9.51-.558 9.761 4.986.057 1.265.07 1.645.07 4.847-.001 4.942.093 6.959-1.394 8.453z" />[m
+[32m+[m[32m                <circle cx="18.406" cy="5.595" r="1.439" />[m
+[32m+[m[32m            </svg>[m
+[32m+[m[32m        </div>[m
+     </div>[m
+ </body>[m
+ [m
