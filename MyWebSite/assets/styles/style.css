@@ -5,6 +5,11 @@ span {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +17,7 @@ body {
   color: white;
   font-family: "Quicksand", sans-serif;
   display: flex;
+  
 }
 
 /* header */
@@ -186,6 +192,34 @@ button:hover {
   max-width: 45rem;
 }
 
+.data-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  border-bottom: 1px solid #727272;
+  padding-bottom: 5rem;
+}
+
+.data-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 3rem;
+}
+
+.data-item-header {
+  margin: auto 0;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.data-item-text {
+  margin: auto 0;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
 /* social */
 .social {
   width: 5%;
@@ -224,4 +258,71 @@ button:hover {
 
 .facebook svg {
   bottom: 8rem;
+}
+
+.resume .header-2 {
+  margin: 2rem 0;
+}
+
+.resume {
+  border-bottom: 1px solid #727272;
+  padding-bottom: 5rem;
+}
+
+/* contacts */
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #727272;
+  border-radius: 5rem;
+
+  padding: 2rem;
+  margin: auto;
+}
+
+.contacts-info p {
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.contacts-item {
+  display: flex;
+  margin: 1rem;
+}
+
+.contacts-container {
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form button {
+  margin: 1rem auto;
+}
+
+input,
+textarea {
+  background: none;
+  border: 1px solid #727272;
+  color: white;
+  border-radius: 5rem;
+  width: 100%;
+  resize: none;
+  padding: 1.3rem;
+  font-size: 1rem;
+}
+
+textarea {
+  font-size: 1rem;
+}
+
+.contacts-form {
+  width: 30%;
+  margin-right: 2rem;
+  padding: 0 5rem;
 }

@@ -1,5 +1,14 @@
-let num = prompt("Vvedite chislo", "");
+function Accumulator(startingValue) {
+  this.value = startingValue;
 
-let answer = num > 0 ? "1" : num < 0 ? "-1" : "0";
+  this.read = function() {
+    this.value += +prompt('Сколько нужно добавить?', 0);
+  };
 
-alert(answer);
+}
+
+let accumulator = new Accumulator(0);
+accumulator.read();
+accumulator.read();
+alert(accumulator.value);
+

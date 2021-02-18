@@ -25,21 +25,21 @@
             <div class="header-name">Ivan<br>Rylkov</div>
         </div>
         <div class="header-right-side">
-            <nav>
+            <nav id='nav'>
                 <ul>
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Resume</a></li>
-                    <li class="nav-item"><a href="">Portfolio</a></li>
-                    <li class="nav-item"><a href="">Contacts</a></li>
-                    <li class="nav-item"><a href="">Download CV</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="#content">Home</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="#about">About</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="#contacts">Contacts</a></li>
+                    <li class="nav-item"><a class="scroll-to" href="">Download CV</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="photo"></div>
-        <div class="content">
+        <div class="content" id='content'>
             <div class="general">
                 <div class="round-name">
                     <span>Ivan Rylkov</span>
@@ -53,11 +53,11 @@
                     in web site design and
                     building, also I am good at wordpress. I love to talk with you about our unique.</p>
                 <div class="top-content-button-group">
-                    <button>Contact Me</button>
-                    <button class="rotate"> ^ </button>
+                    <button id="btn_contact">Contact Me</button>
+                    <button id="go_down" class="rotate"> ^ </button>
                 </div>
             </div>
-            <h1 class="header">About Me</h1>
+            <h1 class="header" id='about'>About Me</h1>
             <h2 class="header-2">My Story</h2>
             <p class="text">Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue
                 blandit nunc, eu sollicitudin urna dolor sagittis lacus. Pellentesque posuere. Praesent turpis. Aenean
@@ -67,6 +67,99 @@
                 Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit
                 nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit
                 non, turpis.</p>
+            <div class="data-container">
+                <div class="data-item ">
+                    <div class="data-item-header header-2">age:</div>
+                    <div class="data-item-text text">26</div>
+                </div>
+                <div class="data-item ">
+                    <div class="data-item-header header-2">freelance</div>
+                    <div class="data-item-text text">Available</div>
+                </div>
+                <div class="data-item ">
+                    <div class="data-item-header header-2">phone:</div>
+                    <div class="data-item-text text">+380661173420</div>
+                </div>
+                <div class="data-item ">
+                    <div class="data-item-header header-2">residence:</div>
+                    <div class="data-item-text text">Ukraine</div>
+                </div>
+                <div class="data-item ">
+                    <div class="data-item-header header-2">city:</div>
+                    <div class="data-item-text text">Kharkiv</div>
+                </div>
+                <div class="data-item ">
+                    <div class="data-item-header header-2">e-mail</div>
+                    <div class="data-item-text text">Ivanrilkov@gmail.com</div>
+                </div>
+            </div>
+            <div class="resume" id="resume">
+                <h1 class="header">Resume</h1>
+                <div class="data-item-header header-2">Education:</div>
+                <p class="text">• 2011 - 2016 <br>
+                    Kharkiv National University of Radio Electronics (KhNURE). Faculty of Telecommunications.
+                    The form of study is daytime.
+                    Specialist.
+                </p>
+                <div class="data-item-header header-2">Experience:</div>
+                <p class="text">• Sales manager in the online store. Hot and cold calls. Duration - 11 months.<br>
+                    • Experience with PC equipment.<br>
+                    • Unskilled work.<br>
+                </p>
+                <div class="data-item-header header-2">Skills:</div>
+                <p class="text">• Windows<br>
+                    • Cisco<br>
+                    • MS Office<br>
+                    • WordPress<br>
+                    • SQL, MySQL (базовые знания)<br>
+                    • HTML<br>
+                    • CSS<br>
+                    • SCSS/LESS<br>
+                    • JS<br>
+                    • JQuery<br>
+                    • AJAX<br>
+                    • Git<br>
+                </p>
+            </div>
+            <div class="contacts" id="contacts">
+                <h1 class="header">Contacts</h1>
+                <div class="contacts-container">
+                    <div class="contacts-form">
+                        <form action="">
+                            <p>Fullname:</p>
+                            <input type="text">
+                            <p>Email:</p>
+                            <input type="text">
+                            <p>Message:</p>
+                            <textarea name="" id="" rows="4"></textarea>
+                            <button>Contact Me</button>
+                        </form>
+                    </div>
+                    <div class="contacts-info">
+                        <p class="header-2">Ivan Rylkov</p>
+                        <div class="contacts-item ">
+                            <div class="data-item-header header-2">AGE:</div>
+                            <div class="">24</div>
+                        </div>
+                        <div class="contacts-item ">
+                            <div class="data-item-header header-2">RESIDENCE:</div>
+                            <div class="">Ukraine</div>
+                        </div>
+                        <div class="contacts-item ">
+                            <div class="data-item-header header-2">FREELANCE:</div>
+                            <div class="">Available</div>
+                        </div>
+                        <div class="contacts-item ">
+                            <div class="data-item-header header-2">PHONE:</div>
+                            <div class="">+380661173422</div>
+                        </div>
+                        <div class="contacts-item ">
+                            <div class="data-item-header header-2">E-MAIL:</div>
+                            <div class="">Ivanrilkov@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <div class="social">
