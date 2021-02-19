@@ -7,8 +7,8 @@
     <title>About Ivan Rylkov</title>
     <link rel="icon" href="">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <link rel="stylesheet" href="/assets/styles/style.css">
-    <script src="/assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/styles/style.min.css">
+    <script src="/assets/js/script.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <!-- font-family: 'Quicksand', sans-serif; -->
@@ -17,26 +17,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-left-side">
-            <div class="header-logo">
-                <img src="/assets/imgs/logo.png" alt="">
-            </div>
-            <div class="header-name">Ivan<br>Rylkov</div>
-        </div>
-        <div class="header-right-side">
-            <nav id='nav'>
-                <ul>
-                    <li class="nav-item"><a class="scroll-to" href="#content">Home</a></li>
-                    <li class="nav-item"><a class="scroll-to" href="#about">About</a></li>
-                    <li class="nav-item"><a class="scroll-to" href="#resume">Resume</a></li>
-                    <li class="nav-item"><a class="scroll-to" href="">Portfolio</a></li>
-                    <li class="nav-item"><a class="scroll-to" href="#contacts">Contacts</a></li>
-                    <li class="nav-item"><a class="scroll-to" href="">Download CV</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    @@include('_header.html')
+ 
     <main>
         <div class="photo"></div>
         <div class="content" id='content'>
