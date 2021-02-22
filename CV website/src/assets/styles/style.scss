@@ -1,0 +1,101 @@
+@import "_null";
+@import "_font";
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  background-color: cadetblue;
+  align-self: center;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  background-color: #232c39;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.photo {
+  padding: 30px 60px;
+  width: 100%;
+}
+
+.leftside__stack {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: 0 -5px 20px rgba(8, 8, 8, 0.24);
+}
+
+.leftside__block {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0;
+  &:last-child {
+    margin-bottom: 6px;
+    border-bottom: 0;
+  }
+  &:first-child {
+  }
+  flex: 1 1 auto;
+  border-bottom: 1px solid white;
+}
+.leftside__block__title {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  margin-bottom: 4px;
+}
+
+.leftside__block__text {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+
+.leftside__list__item {
+  margin-top: 8px;
+}
+
+.rightside {
+  color: black;
+  display: flex;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+}
+
+.name__title {
+    font-size: 30px;
+    font-family: 'Helvetica Neue Medium';
+}
+
+.position {
+    font-size: 24px;
+}
+
+.name {
+
+}
+
+.rightside {
+    padding: 56px 24px;
+    p {
+        margin-top: 50px;
+        max-width: 300px;
+    }
+}
+
