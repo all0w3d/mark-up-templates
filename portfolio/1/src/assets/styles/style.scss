@@ -45,7 +45,6 @@ body {
     box-shadow: 3px 3px 10px rgb(199, 199, 199);
     transition: 0.3s;
     flex: 0 0 103px;
-    
   }
 }
 .links__logo {
@@ -69,7 +68,7 @@ body {
   &:hover {
     box-shadow: 3px 3px 10px rgb(199, 199, 199);
     background-color: #fff;
-    transition: .3s;
+    transition: 0.3s;
     cursor: pointer;
     padding: 22px;
   }
@@ -99,16 +98,12 @@ body {
   text-align: center;
   border: 1px solid #1faae2;
   padding: 20px 0px;
-  
+
   font-family: "OpenSans-Light", serif;
   font-size: 16px;
   color: #6d6e71;
   margin-bottom: 30px;
-  
 }
-
-
-
 
 .speech-bubble {
   position: relative;
@@ -116,37 +111,24 @@ body {
   height: 60px;
   text-align: center;
   border-radius: 10px;
-  
-  
 }
- 
+
 .speech-bubble:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 0;
   border: 15px solid;
   color: white;
-  
-  
-  
 }
-
 
 .speech-bubble-bottom:after {
   border-top-color: #1faae2;
-  
-  
+
   top: 100%;
   left: 50%;
   margin-left: -15px;
-  
 }
-
-
-
-
-
 
 .contact__icons {
   display: flex;
@@ -210,8 +192,6 @@ body {
     background-repeat: no-repeat;
     background-size: 35px;
     background-image: url(/assets/imgs/icons/active.png);
-    
-    
 
     // box-shadow: 3px 3px 10px rgb(214, 214, 214);
   }
@@ -437,7 +417,6 @@ main {
 
   display: flex;
   justify-content: center;
-  
 }
 
 .What-we-do__title {
@@ -455,12 +434,12 @@ main {
 }
 
 .projects {
-  background: url(/assets/imgs/greybg.png) no-repeat;
-
+  background-image: url(/assets/imgs/greybg.jpg);
+  background-color: #efefef;
   display: flex;
-  width: 100%;
   justify-content: center;
-
+  width: 100%;
+  background-position: top center;
   padding-bottom: 104px;
 }
 
@@ -511,6 +490,7 @@ main {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .team__item {
   flex: 25%;
@@ -518,6 +498,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 20px;
 }
 .team__photo {
   background-color: #f5f5f5;
@@ -561,36 +542,32 @@ main {
   justify-content: center;
   align-items: flex-end;
   padding-bottom: 70px;
-  
+}
+
+.map-img {
+  display: none;
 }
 
 .message {
   max-width: 200px;
   align-self: center;
   background-color: #fff;
-  
 }
 
 .contact-icon {
-  
-
   &:nth-child(2) {
     img {
-    padding: 15px 20px;
-  }
+      padding: 15px 20px;
+    }
   }
 
-  img{
-  
+  img {
     background-color: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 15%;
-  padding: 15px;
-  height: 60px;
-  
-  
-  
-}
+    border: 1px solid #dbdbdb;
+    border-radius: 15%;
+    padding: 15px;
+    height: 60px;
+  }
 }
 
 footer {
@@ -598,7 +575,7 @@ footer {
   background-color: #2b2c2d;
   display: flex;
   justify-content: center;
-  
+
   align-items: center;
 }
 
@@ -607,7 +584,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex: 75%;
-  
 }
 
 .footer__bottom {
@@ -621,7 +597,6 @@ footer {
   display: flex;
   flex-direction: column;
   height: 250px;
-  
 }
 
 .footer__credit {
@@ -633,22 +608,21 @@ footer {
   color: #cdcdcd;
   font-size: 13px;
   margin: 0 7px;
-  
-  cursor: pointer;
-&:last-child {
-  &::after {
-    content: '';
-  }
-}
 
-  &::after{
+  cursor: pointer;
+  &:last-child {
+    &::after {
+      content: "";
+    }
+  }
+
+  &::after {
     content: "•";
     position: absolute;
     right: 1;
     padding-left: 5px;
     font-size: 20px;
     line-height: 13px;
-    
   }
 }
 
@@ -660,7 +634,7 @@ footer {
   display: flex;
   align-items: center;
   width: 40%;
-  
+
   button {
     width: 77px;
     background-color: #494c4d;
@@ -674,9 +648,49 @@ footer {
     color: white;
     text-overflow: ellipsis;
   }
-    img {
-      align-self: center;
-      margin-right: 10px;
-    
+  img {
+    align-self: center;
+    margin-right: 10px;
   }
+}
+
+.menu-burger__header {
+  position: relative;
+  width: 40px;
+  height: 35px;
+  display: none;
+}
+
+.menu-burger__header span,
+.menu-burger__header:after,
+.menu-burger__header:before {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: rgb(134, 134, 134);
+  margin: 0 auto;
+}
+.menu-burger__header span {
+  top: 16px;
+  width: 27px;
+}
+.menu-burger__header:after,
+.menu-burger__header:before {
+  content: "";
+}
+.menu-burger__header:after {
+  bottom: 5px;
+}
+.menu-burger__header:before {
+  top: 5px;
+}
+
+.header-mobile__nav {
+  height: 0;
+}
+
+.active__nav {
+  height: 600px;
+  margin: 50px 0;
+  background-color: rgb(231, 231, 231);
 }
