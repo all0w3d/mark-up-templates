@@ -2,3 +2,7 @@ training/
 MyWebsite/
 node_modules/*
 .vscode/*
+*/.vscode/*
+*/.vscode/
+.vscode/
+CV website/
