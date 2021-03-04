@@ -1,6 +1,4 @@
-/training/*
-/MyWebsite/*
-
+training/*
+MyWebsite/*
 node_modules/*
-/training/*
 .vscode/*
