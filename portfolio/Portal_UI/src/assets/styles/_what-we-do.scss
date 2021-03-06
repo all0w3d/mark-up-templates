@@ -1,0 +1,127 @@
+.what-about {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 68px;
+}
+
+.what-about__item {
+  display: flex;
+
+  &:last-child {
+    .what-about__text {
+      padding-right: 0;
+    }
+  }
+}
+
+.what-about__text {
+  padding: 15px 30px;
+  max-width: 445px;
+  text-align: justify;
+}
+
+.what-about__title {
+  font-family: "OpenSans-Bold", serif;
+  font-size: 26px;
+  color: #6d6e71;
+  margin-bottom: 28px;
+}
+
+.what-about__content {
+  font-family: "OpenSans-light", serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #6d6e71;
+}
+
+.What-we-do {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 70px 0;
+}
+
+.title-inner {
+  display: flex;
+}
+
+.title__content {
+  align-self: center;
+  margin-left: 33px;
+  max-width: 444px;
+}
+
+.title__naming {
+  font-size: 44px;
+  font-family: "OpenSans-Bold", serif;
+  color: #6d6e71;
+}
+
+.title__about {
+  font-size: 17px;
+  font-family: "OpenSans-Light", serif;
+  color: #6d6e71;
+  margin-top: 17px;
+}
+
+.What-we-do__content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.What-we-do__item {
+  flex: 50%;
+  display: flex;
+  border-right: 1px solid #eaeced;
+  width: 100%;
+
+  &:nth-child(2n-1) {
+    .What-we-do__text {
+      padding: 0px 70px 0 50px;
+    }
+  }
+
+  &:nth-child(2n) {
+    border-right: none;
+    padding-left: 80px;
+    .What-we-do__text {
+      padding: 0px 0 0px 50px;
+    }
+  }
+  padding-bottom: 100px;
+  &:nth-child(5) {
+    padding-bottom: 0;
+  }
+  &:nth-child(6) {
+    padding-bottom: 0;
+  }
+}
+.What-we-do__img {
+  min-width: 100px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.What-we-do__title {
+  font-size: 24px;
+  font-family: "OpenSans-Bold", serif;
+  color: #6d6e71;
+  margin-bottom: 22px;
+}
+.What-we-do__body {
+  font-size: 16px;
+  font-family: "OpenSans-Light", serif;
+  color: #6d6e71;
+  line-height: 1.5;
+  text-align: justify;
+}

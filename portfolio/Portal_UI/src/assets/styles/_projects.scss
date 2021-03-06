@@ -1,0 +1,49 @@
+
+.projects {
+    background-image: url(/assets/imgs/greybg.jpg);
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-position: top center;
+    padding-bottom: 104px;
+  }
+  
+  .projects__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects__item {
+    flex: 25%;
+  
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__image {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  
+    img {
+      height: 209px;
+      width: 227px;
+    }
+  }
+  .projects__footer {
+    background-color: white;
+    display: flex;
+  
+    text-align: center;
+  }
+  .projects__control-btn {
+    flex: 50%;
+    align-self: center;
+    padding: 20px 0;
+    &:nth-child(2n-1) {
+      border-right: 1px solid #efefef;
+    }
+  }
+
+  

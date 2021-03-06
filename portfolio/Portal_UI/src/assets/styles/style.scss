@@ -1,0 +1,29 @@
+@import "_null";
+@import "_font";
+@import "_upper";
+@import "_header";
+@import "_picture";
+@import "_what-we-do";
+@import "_projects";
+@import "_team";
+@import "_map";
+@import "_footer";
+@import "_nav";
+@import "_media";
+
+body {
+  font-family: "OpenSans-Light", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 1158px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
