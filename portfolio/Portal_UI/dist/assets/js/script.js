@@ -80,7 +80,7 @@ function stickyNav() {
 }
 
 window.onscroll = function () {
-  // stickyNav();
+  stickyNav();
 };
 ;
 
