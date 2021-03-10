@@ -1,9 +1,19 @@
 @import "_null";
+
+$red: #ff4c60 !global;
+$yellow: #ffd15c !global;
+$blue: #6c6ce5 !global;
+$green: #44d7b5 !global;
+
 @import "_header";
 @import "_main";
+@import "_about";
 
 
 body {
   font-family: 'Rubik', sans-serif;
   background-color: #353353;
 }
+
+
+

@@ -25,12 +25,13 @@
     margin-right: 0;
   }
   &:hover {
-    color: #ffd15c;
+    color: $yellow;
     transition: 0.3s;
   }
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -40,6 +41,7 @@ header {
   background-color: #353353;
   position: fixed;
   border-bottom: 1px solid rgb(73, 73, 73);
+  z-index: 10;
 }
 
 .header__logo {
@@ -48,7 +50,7 @@ header {
   cursor: pointer;
 
   span {
-    color: rgb(255, 60, 135);
+    color: $red;
     font-size: 30px;
   }
 }
