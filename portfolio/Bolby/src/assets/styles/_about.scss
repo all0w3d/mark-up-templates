@@ -1,7 +1,4 @@
-section.about {
-  display: flex;
-  background-color: #f9f9ff;
-}
+
 
 .about__body {
   display: flex;
@@ -16,25 +13,7 @@ section.about {
   }
 }
 
-.title {
-  padding-top: 100px;
-  padding-bottom: 50px;
 
-  h2 {
-    font-weight: 600;
-    font-size: 38px;
-    color: #454360;
-    margin-top: -30px;
-    margin-left: 25px;
-  }
-
-  svg {
-    height: 50px;
-    width: 50px;
-    fill: rgb(228, 228, 228);
-    z-index: -1;
-  }
-}
 
 .about__message {
   display: flex;
@@ -107,4 +86,31 @@ section.about {
 .skill__text {
   display: flex;
   justify-content: space-between;
+}
+
+.footer__item {
+  display: flex;
+  svg {
+    height: 35px;
+    width: 35px;
+    fill: rgb(218, 218, 218);
+  }
+}
+
+.about__footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__text {
+  padding: 0 0 0 20px;
+  color: $font;
+  .footer__number {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .footer__word {
+    font-size: 16px;
+  }
 }
