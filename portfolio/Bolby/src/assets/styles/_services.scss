@@ -1,53 +1,43 @@
-
 .services__body {
-    display: flex;
-    
-    
+  display: flex;
 }
 .services__item {
-    margin-right: 50px;
-    background-color: $blue;
-    border-radius: 25px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    box-shadow: 0 0 15px rgb(216, 216, 216);
-    img {
-        max-height: 100px;
-        align-self: center;
-    }
-    &:nth-child(1) {
+  margin-right: 50px;
+  background-color: $blue;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 15px rgb(216, 216, 216);
 
-    }
-    &:nth-child(2) {
-        background-color: $yellow;
-        color: black;
-    }
-    &:nth-child(3) {
-        background-color: $red;
-        margin-right: 0;
-    }
-    
+  &:nth-child(1) {
+  }
+  &:nth-child(2) {
+    background-color: $yellow;
+    color: black;
+  }
+  &:nth-child(3) {
+    background-color: $red;
+    margin-right: 0;
+  }
 }
 .services__title {
-    padding: 20px 0;
-    font-size: 22px;
-    font-weight: 600;
-    
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: 600;
 }
 .services__text {
-    line-height: 26px;
-    font-size: 18px;
+  line-height: 26px;
+  font-size: 18px;
 }
 .services__footer {
-    padding-top: 40px;
-    align-self: center;
-    font-size: 16px;
-    a {
-        color: $red;
-        
-    }
+  padding-top: 40px;
+  align-self: center;
+  font-size: 16px;
+  a {
+    color: $red;
+  }
 }

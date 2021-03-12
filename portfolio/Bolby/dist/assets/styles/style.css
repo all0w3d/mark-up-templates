@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -193,11 +195,6 @@ main {
 
 .user__photo {
   padding-bottom: 15px;
-}
-
-.user__photo img {
-  width: 100%;
-  max-width: 150px;
 }
 
 .main__user {
@@ -517,15 +514,16 @@ button:hover {
       align-self: center;
 }
 
-.about__img img {
-  max-width: 150px;
+.about__img svg {
+  height: 150px;
+  width: 150px;
 }
 
 .about__message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: 100px;
   background-color: #fff;
   -webkit-box-align: center;
@@ -653,12 +651,6 @@ button:hover {
   color: white;
   -webkit-box-shadow: 0 0 15px #d8d8d8;
           box-shadow: 0 0 15px #d8d8d8;
-}
-
-.services__item img {
-  max-height: 100px;
-  -ms-flex-item-align: center;
-      align-self: center;
 }
 
 .services__item:nth-child(2) {
@@ -885,6 +877,9 @@ button:hover {
   z-index: 1;
   position: absolute;
   opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .recent__content .content__item svg {
@@ -1129,6 +1124,195 @@ button:hover {
 
 .d-none {
   display: none;
+}
+
+.posts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.posts__item {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 25px;
+  -webkit-box-shadow: 0 0 25px rgba(192, 192, 192, 0.438);
+          box-shadow: 0 0 25px rgba(192, 192, 192, 0.438);
+  border-radius: 25px;
+  position: relative;
+  background-color: white;
+}
+
+.posts__item svg {
+  height: auto;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.posts__item .posts__tag {
+  position: absolute;
+  color: white;
+  background-color: #ff4c60;
+  padding: 7px 10px;
+  border-radius: 0 0 15px 15px;
+  margin-left: 20px;
+}
+
+.posts__title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px;
+  line-height: 25px;
+}
+
+.posts__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px 20px 20px;
+  color: #b8b8b8;
+}
+
+.posts__date::after {
+  content: "•";
+  padding: 0 7px;
+}
+
+.posts__name {
+  color: #ff4c60;
+  cursor: pointer;
+}
+
+.contact__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contact__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.contact__text h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 25px;
+  padding-bottom: 20px;
+}
+
+.contact__text h4 {
+  font-size: 16px;
+}
+
+.contact__text h4 span {
+  color: #ff4c60;
+  cursor: pointer;
+}
+
+.contact__form {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form form input,
+.contact__form form textarea {
+  padding: 15px 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 25px rgba(214, 214, 214, 0.39);
+          box-shadow: 0 0 25px rgba(214, 214, 214, 0.39);
+  margin-bottom: 25px;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.contact__form form input::-webkit-input-placeholder, .contact__form form textarea::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+
+.contact__form form input::-moz-placeholder, .contact__form form textarea::-moz-placeholder {
+  color: #b1b1b1;
+}
+
+.contact__form form input:-ms-input-placeholder, .contact__form form textarea:-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.contact__form form input::-ms-input-placeholder, .contact__form form textarea::-ms-input-placeholder {
+  color: #b1b1b1;
+}
+
+.contact__form form input::placeholder,
+.contact__form form textarea::placeholder {
+  color: #b1b1b1;
+}
+
+.contact__form form textarea {
+  resize: vertical;
+}
+
+.form__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.form__top input {
+  width: 50%;
+}
+
+.form__button {
+  width: 200px;
+  margin: 20px 0;
+}
+
+footer {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__text {
+  color: #829ab3;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 body {
