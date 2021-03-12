@@ -1,0 +1,83 @@
+.clients__slider {
+  display: flex;
+  max-width: 800px;
+  align-self: center;
+}
+.slider__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+
+  img {
+    max-width: 120px;
+    margin: 0 auto;
+  }
+}
+.slider__title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 0 5px 0;
+}
+.slider__position {
+  font-size: 14px;
+  padding-bottom: 30px;
+}
+.slider__message {
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 16px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgba(201, 201, 201, 0.329);
+}
+
+.clients__logos {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  svg {
+    width: 70px;
+    height: 50px;
+    
+  }
+
+  .logo__item {
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+.slick-dots button {
+  all: unset;
+  font-size: 0;
+  min-width: 10px;
+  min-height: 5px;
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.slick-dots {
+  cursor: pointer;
+  padding: 20px 0;
+  .slick-active {
+    button {
+      background-color: $red;
+      min-width: 25px;
+      margin: 0 10px;
+    }
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.d-none {
+  display: none;
+}

@@ -63,3 +63,14 @@ const animateCSS = (element, animation, prefix = "animate__") =>
 
     node.addEventListener("animationend", handleAnimationEnd, { once: true });
   });
+$(document).ready(function(){
+    $('.clients__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        dots: true,
+
+    });
+    $('.clients__slider').removeClass('d-none');
+  });

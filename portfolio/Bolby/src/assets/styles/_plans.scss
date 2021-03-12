@@ -13,10 +13,11 @@
   text-align: center;
   align-self: center;
 
-  img {
-    max-width: 120px;
-    width: 100%;
+  svg {
+    
+    
     padding-bottom: 20px;
+    align-self: center;
   }
   &:nth-child(2) {
     z-index: 5;
