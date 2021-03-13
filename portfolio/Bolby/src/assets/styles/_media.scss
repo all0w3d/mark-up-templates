@@ -1,0 +1,191 @@
+@media screen and (max-width: 1250px) {
+  section,
+  header,
+  footer {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .posts__item {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header__nav {
+    display: none;
+    
+  }
+  .slider__item {
+    width: 100%;
+    
+  }
+
+  .services__body {
+    flex-direction: column;
+  }
+
+  .services__item {
+    max-width: 450px;
+
+    align-self: center;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+  .menu-burger__header {
+    display: flex;
+    
+  }
+
+  .closeBtn {
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 30px 40px 0 0;
+      font-size: 50px;
+      
+  }
+
+.mobile {
+    all: unset;
+    position: fixed;
+    z-index: 50;
+    background-color: black;
+    
+    
+    
+    
+    nav {
+        flex-direction: column;
+        position: fixed;
+        background-color: #353353;
+        transition: all .5s ease;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .nav__item {
+            margin: 20px;
+            font-size: 25px;
+            
+        }
+    }
+}
+  
+}
+@media screen and (max-width: 700px) {
+  .plans__body {
+    flex-direction: column;
+  }
+
+  .plans__item {
+    margin-bottom: 25px;
+  }
+
+  .about__body {
+    flex-direction: column;
+    .about__message {
+      margin: 0;
+      margin-top: 25px;
+    }
+  }
+
+  .contact__body {
+    flex-direction: column;
+    text-align: center;
+    .contact__text {
+      margin-bottom: 25px;
+    }
+
+    button {
+      align-self: center;
+    }
+  }
+  .to-top-btn {
+    display: none;
+  }
+  .fixed__navbar {
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .experience__body {
+    flex-direction: column;
+    .experience__item {
+      margin: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  .about {
+    .about__footer {
+      flex-wrap: wrap;
+      .footer__item {
+        flex: 50%;
+        margin-bottom: 25px;
+        padding-right: 25px;
+      }
+    }
+  }
+  .contact__form form input,
+  .contact__form form textarea {
+    margin-right: 0;
+  }
+  .posts__body {
+    flex-direction: column;
+    .posts__item {
+      margin: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about__message {
+    flex-direction: column;
+
+    button {
+    }
+    .message__col {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      button {
+        align-self: center;
+      }
+    }
+  }
+
+  .recent__content {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    .content__item {
+      margin: 0;
+      margin-bottom: 25px;
+    }
+  }
+  .clients__logos {
+    .logo__item {
+      flex: 50%;
+    }
+    flex-wrap: wrap;
+  }
+
+  .recent__menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .menu__item {
+      margin: 0;
+      padding: 20px 10px;
+    }
+  }
+}

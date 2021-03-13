@@ -6,12 +6,15 @@
   height: 70px;
   color: white;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .header__nav {
+  transition: all .5s ease;
   nav {
     display: flex;
     flex-direction: row;
+    transition: all .5s ease;
   }
 }
 
@@ -25,7 +28,7 @@
     margin-right: 0;
   }
   &:hover {
-    color: $yellow;
+    color: $red;
     transition: 0.3s;
   }
 }
@@ -56,3 +59,44 @@ header {
     font-size: 30px;
   }
 }
+
+.fixed__navbar {
+  height: 40px;
+}
+
+.menu-burger__header {
+  position: relative;
+  width: 40px;
+  height: 35px;
+  display: none;
+  cursor: pointer;
+}
+
+.menu-burger__header span,
+.menu-burger__header:after,
+.menu-burger__header:before {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+.menu-burger__header span {
+  top: 16px;
+  width: 40px;
+}
+.menu-burger__header:after,
+.menu-burger__header:before {
+  content: "";
+}
+.menu-burger__header:after {
+  bottom: 5px;
+}
+.menu-burger__header:before {
+  top: 5px;
+}
+
+.closeBtn {
+  display: none;
+}
+

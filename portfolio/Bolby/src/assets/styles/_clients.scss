@@ -2,12 +2,14 @@
   display: flex;
   max-width: 800px;
   align-self: center;
+  width: 100%;
 }
 .slider__item {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding: 50px;
+  
 
   img {
     max-width: 120px;
