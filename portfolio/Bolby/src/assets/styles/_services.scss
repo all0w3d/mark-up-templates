@@ -12,6 +12,12 @@
   text-align: center;
   color: white;
   box-shadow: 0 0 15px rgb(216, 216, 216);
+  height: 100%;
+  transition: all .3s ease-in-out;
+  &:hover {
+    margin-top: -20px;
+    cursor: pointer;
+  }
 
   &:nth-child(1) {
   }

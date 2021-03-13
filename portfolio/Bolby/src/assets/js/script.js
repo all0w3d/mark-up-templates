@@ -6,39 +6,25 @@
 @@include("_checkScroll.js");
 @@include("_sticky.js");
 @@include("_toTopBtn.js");
+@@include("_aos.js");
+@@include("_btn.js");
 
 window.onscroll = function () {
   stickyNav();
   ToTop();
   checkScroll();
+  AOS.init();
 };
 
-let burgerBtn = document.querySelector('#burgerBtn');
-let nav = document.querySelector('.header__nav');
-let close = document.querySelector('.closeBtn');
-let navItem = document.querySelectorAll('.nav__item');
-let body = document.querySelector('body');
+for (let j of document.querySelectorAll(".title")) {
+  j.setAttribute("data-aos", "fade-up");
+  j.setAttribute("data-aos-duration", "1000");
+  j.setAttribute("data-aos-once", "true");
+}
 
-burgerBtn.addEventListener("click", function () {
-  nav.classList.toggle("mobile");
-  
-  if (nav.classList.contains("mobile")) {
-    body.style.overflow = "hidden";
-  } else {
-    body.style.overflow = "visible";
-  }
-});
 
-close.addEventListener("click", function () {
-  nav.classList.remove("mobile");
-  body.style.overflow = "visible";
-});
-
-for (let i of navItem) {
-  i.addEventListener("click", function () {
-    if (nav.classList.contains("mobile")) {
-    nav.classList.remove("mobile");
-    body.style.overflow = "visible";
-    }
-  });
+for (let k of document.querySelectorAll(".experience__item-p")) {
+  k.setAttribute("data-aos", "fade-up");
+  k.setAttribute("data-aos-duration", "1000");
+  k.setAttribute("data-aos-once", "true");
 }

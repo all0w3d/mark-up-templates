@@ -18,13 +18,13 @@ $font: #454360 !global;
 @import "_contact";
 @import "_footer";
 @import "_media";
-
+$aos-distance: 50px;
+@import "_aos";
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #353353;
 }
-
 
 section {
   display: flex;
@@ -54,4 +54,42 @@ section {
 
 .active {
   color: $red;
+}
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number-animation-item {
+  transition: --num 3s;
+  counter-set: num var(--num);
+}
+.number-animation-item::after {
+  content: counter(num);
+}
+
+.number-animation {
+
+  &:nth-child(1) {
+    .footer__number {
+      --num: 198;
+    }
+  }
+  &:nth-child(2) {
+    .footer__number {
+      --num: 5670;
+    }
+  }
+  &:nth-child(3) {
+    .footer__number {
+      --num: 427;
+    }
+  }
+  &:nth-child(4) {
+    .footer__number {
+      --num: 35;
+    }
+  }
 }

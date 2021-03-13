@@ -10,7 +10,6 @@ function checkScroll() {
   let contact = document.querySelector(".contact");
   let navItem = document.getElementsByClassName("nav__item");
 
-  let nav1 = home.offsetTop;
   let nav2 = about.offsetTop;
   let nav3 = services.offsetTop;
   let nav4 = exp.offsetTop;
@@ -26,6 +25,12 @@ function checkScroll() {
 
   if (scrollPos < nav3 && scrollPos > nav2) {
     navItem[1].classList.add("active");
+    let loading = document.querySelector("#loading");
+    loading.classList.add("loading-animation");
+    let numberAnimation = document.querySelectorAll(".footer__item");
+    for (let h of numberAnimation) {
+      h.classList.add("number-animation");
+    }
   } else {
     navItem[1].classList.remove("active");
   }

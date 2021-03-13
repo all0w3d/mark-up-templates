@@ -11,10 +11,17 @@
   border-radius: 25px;
   position: relative;
   background-color: white;
+  height: 370px;
+  width: 300px;
+  transition: all .3s ease;
+  &:hover {
+    margin-top: -20px;
+    cursor: pointer;
+  }
 
   svg {
     height: auto;
-    width: 100%;
+    width: 440px;
     align-self: center;
   }
 
