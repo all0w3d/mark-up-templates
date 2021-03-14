@@ -6,14 +6,14 @@
         </div>
         <div class="recent__body">
             <div class="recent__menu">
-                <div class="menu__item active">Everything</div>
-                <div class="menu__item">Art</div>
-                <div class="menu__item">Branding</div>
-                <div class="menu__item">Creative</div>
-                <div class="menu__item">Design</div>
+                <div class="menu__item active" id="everything">Everything</div>
+                <div class="menu__item" id="art">Art</div>
+                <div class="menu__item" id="branding">Branding</div>
+                <div class="menu__item" id="creative">Creative</div>
+                <div class="menu__item" id="design">Design</div>
             </div>
             <div class="recent__content">
-                <div class="content__item">
+                <div class="content__item art">
                     <div class="content__item-img">@@include('assets/imgs/recent/1.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item art">
                     <div class="content__item-img">@@include('assets/imgs/recent/2.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item design">
                     <div class="content__item-img">@@include('assets/imgs/recent/3.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item creative">
                     <div class="content__item-img">@@include('assets/imgs/recent/4.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item art">
                     <div class="content__item-img">@@include('assets/imgs/recent/5.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -63,7 +63,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="content__item">
+                <div class="content__item branding">
+                    <div class="content__item-img">@@include('assets/imgs/recent/6.svg')</div>
+                    <p>Project Managment Illustration</p>
+                    <div class="content__hover">
+                        <div class="content__hover-tag">Branding</div>
+                        <div class="content__hover-icon">
+                            @@include('assets/imgs/zoom.svg')
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item creative hided d-none">
+                    <div class="content__item-img">@@include('assets/imgs/recent/4.svg')</div>
+                    <p>Project Managment Illustration</p>
+                    <div class="content__hover">
+                        <div class="content__hover-tag">Creative</div>
+                        <div class="content__hover-icon">
+                            @@include('assets/imgs/zoom.svg')
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item art hided d-none" >
+                    <div class="content__item-img">@@include('assets/imgs/recent/5.svg')</div>
+                    <p>Project Managment Illustration</p>
+                    <div class="content__hover">
+                        <div class="content__hover-tag">Art</div>
+                        <div class="content__hover-icon">
+                            @@include('assets/imgs/zoom.svg')
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item branding hided d-none">
                     <div class="content__item-img">@@include('assets/imgs/recent/6.svg')</div>
                     <p>Project Managment Illustration</p>
                     <div class="content__hover">
@@ -74,7 +104,12 @@
                     </div>
                 </div>
             </div>
-            <button class="recent__button">Load More</button>
+            
+        </div>
+            <button class="recent__button more-btn">Load More</button>
+            <button class="recent__button less-btn">Show Less</button>
+          
+            
         </div>
     </div>
 </section>

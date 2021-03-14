@@ -258,6 +258,139 @@ for (let i of navItem) {
     }
   });
 };
+let contentItem = document.querySelectorAll(".content__item");
+
+let artBtn = document.querySelector("#art");
+let brandingBtn = document.querySelector("#branding");
+let creativeBtn = document.querySelector("#creative");
+let designBtn = document.querySelector("#design");
+let everythingBtn = document.querySelector("#everything");
+let btns = document.querySelectorAll(".menu__item");
+let leadMoreBtn = document.querySelector(".more-btn");
+let leadLessBtn = document.querySelector(".less-btn");
+
+everythingBtn.addEventListener("click", function () {
+  for (let i of btns) {
+    i.classList.remove("active");
+  }
+
+  everythingBtn.classList.add("active");
+
+  for (let i of contentItem) {
+    if (!i.classList.contains("d-none")) {
+      i.style.display = "flex";
+      i.classList.add("animate__animated");
+      i.classList.add("animate__fadeIn");
+    }
+  }
+});
+
+artBtn.addEventListener("click", function () {
+  for (let i of btns) {
+    i.classList.remove("active");
+  }
+
+  artBtn.classList.add("active");
+
+  for (let i of contentItem) {
+    if (i.classList.contains("art") & !i.classList.contains("d-none")) {
+      i.classList.add("animate__animated");
+      i.classList.add("animate__fadeIn");
+      i.style.display = "flex";
+    } else {
+      if (!i.classList.contains("art") & !i.classList.contains("d-none")) {
+        i.style.display = "none";
+      }
+    }
+  }
+});
+
+creativeBtn.addEventListener("click", function () {
+  for (let i of btns) {
+    i.classList.remove("active");
+  }
+
+  creativeBtn.classList.add("active");
+
+  for (let i of contentItem) {
+    if (i.classList.contains("creative") & !i.classList.contains("d-none")) {
+      i.classList.add("animate__animated");
+      i.classList.add("animate__fadeIn");
+      i.style.display = "flex";
+    } else {
+      if (!i.classList.contains("creative") & !i.classList.contains("d-none")) {
+        i.style.display = "none";
+      }
+    }
+  }
+});
+
+brandingBtn.addEventListener("click", function () {
+  for (let i of btns) {
+    i.classList.remove("active");
+  }
+
+  brandingBtn.classList.add("active");
+
+  for (let i of contentItem) {
+    if (i.classList.contains("branding") & !i.classList.contains("d-none")) {
+      i.classList.add("animate__animated");
+      i.classList.add("animate__fadeIn");
+      i.style.display = "flex";
+    } else {
+      if (!i.classList.contains("branding") & !i.classList.contains("d-none")) {
+        i.style.display = "none";
+      }
+    }
+  }
+});
+
+designBtn.addEventListener("click", function () {
+  for (let i of btns) {
+    i.classList.remove("active");
+  }
+
+  designBtn.classList.add("active");
+
+  for (let i of contentItem) {
+    if (i.classList.contains("design") & !i.classList.contains("d-none")) {
+      i.classList.add("animate__animated");
+      i.classList.add("animate__fadeIn");
+      i.style.display = "flex";
+    } else {
+      if (!i.classList.contains("design") & !i.classList.contains("d-none")) {
+        i.style.display = "none";
+      }
+    }
+  }
+});
+
+leadMoreBtn.addEventListener("click", function () {
+  everythingBtn.click();
+
+  for (let i of contentItem) {
+    if (i.classList.contains("hided")) {
+      i.classList.remove("d-none");
+      i.style.display = "flex";
+      leadMoreBtn.style.display = "none";
+      leadLessBtn.style.display = "flex";
+    }
+  }
+});
+
+leadLessBtn.addEventListener("click", function () {
+  everythingBtn.click();
+
+  for (let i of contentItem) {
+    if (i.classList.contains("hided")) {
+      i.classList.add("d-none");
+      i.style.display = "none";
+      leadMoreBtn.style.display = "flex";
+      leadLessBtn.style.display = "none";
+    }
+  }
+});
+;
 
 window.onscroll = function () {
   stickyNav();
@@ -266,15 +399,28 @@ window.onscroll = function () {
   AOS.init();
 };
 
-for (let j of document.querySelectorAll(".title")) {
-  j.setAttribute("data-aos", "fade-up");
-  j.setAttribute("data-aos-duration", "1000");
-  j.setAttribute("data-aos-once", "true");
+
+// animations
+for (let i of document.querySelectorAll(".title")) {
+  i.setAttribute("data-aos", "fade-up");
+  i.setAttribute("data-aos-duration", "1000");
+  i.setAttribute("data-aos-once", "true");
+}
+
+for (let i of document.querySelectorAll(".experience__item-p")) {
+  i.setAttribute("data-aos", "fade-up");
+  i.setAttribute("data-aos-duration", "1000");
+  i.setAttribute("data-aos-once", "true");
 }
 
 
-for (let k of document.querySelectorAll(".experience__item-p")) {
-  k.setAttribute("data-aos", "fade-up");
-  k.setAttribute("data-aos-duration", "1000");
-  k.setAttribute("data-aos-once", "true");
+for (let i of document.querySelectorAll(".posts__item")) {
+  i.setAttribute("data-aos", "fade-up");
+  i.setAttribute("data-aos-duration", "1000");
+  i.setAttribute("data-aos-once", "true");
 }
+
+let posts = document.querySelectorAll(".posts__item") 
+  posts[0].setAttribute("data-aos-delay", "100");
+  posts[1].setAttribute("data-aos-delay", "300");
+  posts[2].setAttribute("data-aos-delay", "600");

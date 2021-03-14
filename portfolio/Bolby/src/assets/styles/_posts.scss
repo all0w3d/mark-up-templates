@@ -11,21 +11,26 @@
   border-radius: 25px;
   position: relative;
   background-color: white;
-  height: 370px;
-  width: 300px;
-  transition: all .3s ease;
+  transition: all 1s ease;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
   &:hover {
-    margin-top: -20px;
-    cursor: pointer;
+    .posts__title {
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
   }
-
   svg {
     height: auto;
-    width: 440px;
+    width: 100%;
     align-self: center;
+    transition: all .3s;
+    
   }
 
   .posts__tag {
+    
     position: absolute;
     color: white;
     background-color: $red;
@@ -37,6 +42,7 @@
 .posts__tag {
 }
 .posts__title {
+  transition: all .3s;
   font-size: 18px;
   font-weight: 600;
   padding: 20px;

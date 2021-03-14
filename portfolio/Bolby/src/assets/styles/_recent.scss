@@ -6,7 +6,6 @@
   display: flex;
 }
 .menu__item {
-  
   margin-right: 30px;
   font-size: 16px;
   font-weight: 600;
@@ -18,126 +17,135 @@
     transition: 0.3s;
   }
 }
+
 .recent__content {
   display: flex;
   flex-wrap: wrap;
+}
 
-  .content__item {
-    flex: 30%;
-    background-color: white;
-    margin: 0 30px 30px 0;
-    border-radius: 30px;
-    box-shadow: 0 0 25px rgba(216, 216, 216, 0.363);
+.content__item {
+  display: flex;
+  width: 30%;
+  background-color: white;
+  margin: 0 30px 30px 0;
+  border-radius: 30px;
+  box-shadow: 0 0 25px rgba(216, 216, 216, 0.363);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background 0.3s ease-in;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  p {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.4s;
+    max-width: 400px;
+    padding: 0 50px;
+    padding-bottom: 150px;
+    z-index: 2;
+    margin-top: 100px;
+  }
+  .content__item-img {
+    width: 350px;
+    height: 300px;
+    transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    transition: background 0.3s ease-in;
-    position: relative;
-    overflow: hidden;
     width: 100%;
-    cursor: pointer;
-    p {
+  }
+
+  .content__hover {
+    background-color: $blue;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s;
+    .content__hover-tag {
+      background-color: $red;
       position: absolute;
-      font-size: 30px;
+      // padding: 7px 10px;
+      border-radius: 0 0 10px 10px;
+      margin-left: 30px;
       color: white;
-      font-weight: 600;
-      opacity: 0;
+      font-weight: 600px;
+      font-size: 16px;
+      height: 0px;
+      overflow: hidden;
+      padding: 0 15px;
       transition: all 0.4s;
-      max-width: 400px;
-      padding: 0 50px;
-      padding-bottom: 150px;
-      z-index: 2;
-      margin-top: 100px;
-    }
-    .content__item-img {
-      width: 350px;
-      height: 300px;
-      transition: 0.3s;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
     }
-
-    .content__hover {
-      background-color: $blue;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
+    .content__hover-icon {
+      height: 40px;
+      width: 40px;
+      background-color: $yellow;
+      z-index: 2;
       position: absolute;
+      border-radius: 20px;
+      bottom: 0;
+      margin-left: 30px;
+      margin-bottom: 20px;
+      display: flex;
       opacity: 0;
-      transition: all 0.3s;
-      .content__hover-tag {
-        background-color: $red;
-        position: absolute;
-        // padding: 7px 10px;
-        border-radius: 0 0 10px 10px;
-        margin-left: 30px;
-        color: white;
-        font-weight: 600px;
-        font-size: 16px;
-        height: 0px;
-        overflow: hidden;
-        padding: 0 15px;
-        transition: all 0.4s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .content__hover-icon {
+      transition: all 0.4s;
+      svg {
         height: 40px;
         width: 40px;
-        background-color: $yellow;
-        z-index: 2;
-        position: absolute;
-        border-radius: 20px;
-        bottom: 0;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        display: flex;
-        opacity: 0;
-        transition: all 0.4s;
-        svg {
-          height: 40px;
-          width: 40px;
-          padding: 10px;
-          fill: white;
-        }
-      }
-    }
-
-    svg {
-      transition: all 0.3s;
-      width: 300px;
-      height: 300px;
-    }
-    &:hover {
-      .content__hover {
-        opacity: 0.85;
-        .content__hover-tag {
-          height: 30px;
-        }
-        .content__hover-icon {
-          opacity: 1;
-        }
-      }
-      .content__item-img {
-        svg {
-          width: 350px;
-          height: 350px;
-        }
-
-        opacity: 0.3;
-      }
-      p {
-        opacity: 1;
-        margin-top: 50px;
+        padding: 10px;
+        fill: white;
       }
     }
   }
+
+  svg {
+    transition: all 0.3s;
+    width: 300px;
+    height: 300px;
+  }
+  &:hover {
+    .content__hover {
+      opacity: 0.85;
+      .content__hover-tag {
+        height: 30px;
+      }
+      .content__hover-icon {
+        opacity: 1;
+      }
+    }
+    .content__item-img {
+      svg {
+        width: 350px;
+        height: 350px;
+      }
+
+      opacity: 0.3;
+    }
+    p {
+      opacity: 1;
+      margin-top: 50px;
+    }
+  }
 }
+
+.d-none {
+  display: none;
+}
+
 .recent__button {
   width: 150px;
   align-self: center;
+}
+
+.less-btn {
+  display: none;
 }

@@ -10,11 +10,11 @@
 }
 
 .header__nav {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   nav {
     display: flex;
     flex-direction: row;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
   }
 }
 
@@ -66,7 +66,7 @@ header {
 
 .menu-burger__header {
   position: relative;
-  width: 40px;
+  width: 30px;
   height: 35px;
   display: none;
   cursor: pointer;
@@ -83,20 +83,19 @@ header {
 }
 .menu-burger__header span {
   top: 16px;
-  width: 40px;
+  width: 30px;
 }
 .menu-burger__header:after,
 .menu-burger__header:before {
   content: "";
 }
 .menu-burger__header:after {
-  bottom: 5px;
+  bottom: 7px;
 }
 .menu-burger__header:before {
-  top: 5px;
+  top: 7px;
 }
 
 .closeBtn {
   display: none;
 }
-
