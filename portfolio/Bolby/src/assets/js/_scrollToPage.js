@@ -7,6 +7,7 @@ function scrollToPage() {
   let posts = document.querySelector(".posts");
   let contact = document.querySelector(".contact");
   let navItem = document.getElementsByClassName("nav__item");
+  let scrollBtn = document.querySelector(".main__scroll");
 
   navItem[0].onclick = function () {
     home.scrollIntoView({
@@ -51,6 +52,13 @@ function scrollToPage() {
       block: "start",
     });
   };
+
+  scrollBtn.addEventListener("click", function () {
+    about.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
 }
 
 scrollToPage();

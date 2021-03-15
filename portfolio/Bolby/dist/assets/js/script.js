@@ -83,6 +83,7 @@ function scrollToPage() {
   let posts = document.querySelector(".posts");
   let contact = document.querySelector(".contact");
   let navItem = document.getElementsByClassName("nav__item");
+  let scrollBtn = document.querySelector(".main__scroll");
 
   navItem[0].onclick = function () {
     home.scrollIntoView({
@@ -127,6 +128,13 @@ function scrollToPage() {
       block: "start",
     });
   };
+
+  scrollBtn.addEventListener("click", function () {
+    about.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
 }
 
 scrollToPage();
@@ -235,6 +243,7 @@ let close = document.querySelector('.closeBtn');
 let navItem = document.querySelectorAll('.nav__item');
 let body = document.querySelector('body');
 
+
 burgerBtn.addEventListener("click", function () {
   nav.classList.toggle("mobile");
   
@@ -257,7 +266,9 @@ for (let i of navItem) {
     body.style.overflow = "visible";
     }
   });
-};
+}
+
+;
 let contentItem = document.querySelectorAll(".content__item");
 
 let artBtn = document.querySelector("#art");

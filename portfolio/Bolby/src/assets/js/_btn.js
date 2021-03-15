@@ -4,6 +4,7 @@ let close = document.querySelector('.closeBtn');
 let navItem = document.querySelectorAll('.nav__item');
 let body = document.querySelector('body');
 
+
 burgerBtn.addEventListener("click", function () {
   nav.classList.toggle("mobile");
   
@@ -27,3 +28,4 @@ for (let i of navItem) {
     }
   });
 }
+

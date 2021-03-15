@@ -247,6 +247,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .user__photo {
@@ -1333,7 +1334,6 @@ button:hover {
   transition: all 1s ease;
   overflow: hidden;
   cursor: pointer;
-  height: 100%;
 }
 
 .posts__item:hover .posts__title {
@@ -3461,6 +3461,19 @@ section {
     padding: 20px 10px;
   }
 }
+
+@media screen and (max-height: 600px) {
+  .main__scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  main {
+    min-height: 450px;
+    overflow: scroll;
+  }
+}
 @supports (-webkit-appearance:none){
 
 }
@@ -3506,6 +3519,22 @@ section {
 }
 
  @media screen and (max-width: 450px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-height: 600px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media screen and (max-height: 420px){
 
 @supports (-webkit-appearance:none){
 

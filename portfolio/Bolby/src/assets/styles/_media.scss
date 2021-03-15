@@ -40,7 +40,6 @@
   }
   .menu-burger__header {
     display: flex;
-    
   }
 
   .closeBtn {
@@ -192,5 +191,22 @@
       margin: 0;
       padding: 20px 10px;
     }
+  }
+}
+
+@media screen and (max-height: 600px) {
+  main {
+    
+    
+  }
+  .main__scroll {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  main {
+    min-height: 450px;
+    overflow: scroll;
   }
 }

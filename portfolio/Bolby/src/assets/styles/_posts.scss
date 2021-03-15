@@ -1,6 +1,7 @@
 .posts__body {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .posts__item {
   flex: 30%;
@@ -14,7 +15,7 @@
   transition: all 1s ease;
   overflow: hidden;
   cursor: pointer;
-  height: 100%;
+  
   &:hover {
     .posts__title {
       margin-top: -10px;
