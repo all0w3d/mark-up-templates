@@ -74,70 +74,38 @@ $(document).ready(function(){
     });
     $('.clients__slider').removeClass('d-none');
   });;
-function scrollToPage() {
-  let home = document.querySelector("main");
-  let about = document.querySelector(".about");
-  let services = document.querySelector(".services");
-  let exp = document.querySelector(".experience");
-  let recent = document.querySelector(".recent");
-  let posts = document.querySelector(".posts");
-  let contact = document.querySelector(".contact");
-  let navItem = document.getElementsByClassName("nav__item");
-  let scrollBtn = document.querySelector(".main__scroll");
+window.addEventListener("DOMContentLoaded", () => {
 
-  navItem[0].onclick = function () {
-    home.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+  
+  let selectorArr = [
+    "main",
+    ".about",
+    ".services",
+    ".experience",
+    ".recent",
+    ".posts",
+    ".contact",
+  ];
 
-  navItem[1].onclick = function () {
-    about.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[2].onclick = function () {
-    services.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[3].onclick = function () {
-    exp.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[4].onclick = function () {
-    recent.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[5].onclick = function () {
-    posts.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[6].onclick = function () {
-    contact.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-
-  scrollBtn.addEventListener("click", function () {
-    about.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+  document.querySelectorAll(".nav__item").forEach((item, i) => {
+    item.addEventListener("click", (event) => {
+      if (event.target == item) {
+        document.querySelector(`${selectorArr[i]}`).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     });
   });
-}
 
-scrollToPage();
+  document.querySelector(".main__scroll").addEventListener("click", function () {
+        document.querySelector('.about').scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+
+});
 ;
 function checkScroll() {
   let scrollPos = window.scrollY + 400;
@@ -403,35 +371,30 @@ leadLessBtn.addEventListener("click", function () {
 });
 ;
 
-window.onscroll = function () {
+window.addEventListener("scroll", () => {
   stickyNav();
   ToTop();
   checkScroll();
   AOS.init();
-};
-
+});
 
 // animations
-for (let i of document.querySelectorAll(".title")) {
-  i.setAttribute("data-aos", "fade-up");
-  i.setAttribute("data-aos-duration", "1000");
-  i.setAttribute("data-aos-once", "true");
-}
 
-for (let i of document.querySelectorAll(".experience__item-p")) {
-  i.setAttribute("data-aos", "fade-up");
-  i.setAttribute("data-aos-duration", "1000");
-  i.setAttribute("data-aos-once", "true");
-}
+window.addEventListener("DOMContentLoaded", () => {
+  let j = 0;
+
+  document.querySelectorAll(".posts__item").forEach((post) => {
+    post.setAttribute("data-aos-delay", `${j}`);
+    j += 200;
+  });
+
+  document.querySelectorAll(".title, .experience__item-p, .posts__item").forEach((i) => {
+      i.setAttribute("data-aos", "fade-up");
+      i.setAttribute("data-aos-duration", "1000");
+      i.setAttribute("data-aos-once", "true");
+    });
+});
 
 
-for (let i of document.querySelectorAll(".posts__item")) {
-  i.setAttribute("data-aos", "fade-up");
-  i.setAttribute("data-aos-duration", "1000");
-  i.setAttribute("data-aos-once", "true");
-}
 
-let posts = document.querySelectorAll(".posts__item") 
-  posts[0].setAttribute("data-aos-delay", "100");
-  posts[1].setAttribute("data-aos-delay", "300");
-  posts[2].setAttribute("data-aos-delay", "600");
+

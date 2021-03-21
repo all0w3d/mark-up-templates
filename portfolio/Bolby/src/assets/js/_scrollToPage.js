@@ -1,64 +1,32 @@
-function scrollToPage() {
-  let home = document.querySelector("main");
-  let about = document.querySelector(".about");
-  let services = document.querySelector(".services");
-  let exp = document.querySelector(".experience");
-  let recent = document.querySelector(".recent");
-  let posts = document.querySelector(".posts");
-  let contact = document.querySelector(".contact");
-  let navItem = document.getElementsByClassName("nav__item");
-  let scrollBtn = document.querySelector(".main__scroll");
+window.addEventListener("DOMContentLoaded", () => {
 
-  navItem[0].onclick = function () {
-    home.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+  
+  let selectorArr = [
+    "main",
+    ".about",
+    ".services",
+    ".experience",
+    ".recent",
+    ".posts",
+    ".contact",
+  ];
 
-  navItem[1].onclick = function () {
-    about.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[2].onclick = function () {
-    services.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[3].onclick = function () {
-    exp.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[4].onclick = function () {
-    recent.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[5].onclick = function () {
-    posts.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-  navItem[6].onclick = function () {
-    contact.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
-
-  scrollBtn.addEventListener("click", function () {
-    about.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
+  document.querySelectorAll(".nav__item").forEach((item, i) => {
+    item.addEventListener("click", (event) => {
+      if (event.target == item) {
+        document.querySelector(`${selectorArr[i]}`).scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     });
   });
-}
 
-scrollToPage();
+  document.querySelector(".main__scroll").addEventListener("click", function () {
+        document.querySelector('.about').scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+
+});
