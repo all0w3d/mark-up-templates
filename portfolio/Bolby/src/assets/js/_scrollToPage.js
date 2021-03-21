@@ -1,6 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-
-  
   let selectorArr = [
     "main",
     ".about",
