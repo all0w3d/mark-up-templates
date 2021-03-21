@@ -10,3 +10,4 @@ CV website/
 /hints/*
 hints/
 *.rar
+.jshintrc

@@ -1253,6 +1253,7 @@ button:hover {
 .clients__logos svg {
   width: 70px;
   height: 50px;
+  cursor: pointer;
 }
 
 .clients__logos .logo__item {
