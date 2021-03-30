@@ -96,13 +96,23 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelector(".main__scroll").addEventListener("click", function () {
-        document.querySelector('.about').scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+  document
+    .querySelector(".main__scroll")
+    .addEventListener("click", function () {
+      document.querySelector(".about").scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
+    });
 
+  document
+    .querySelector(".user__button button")
+    .addEventListener("click", function () {
+      document.querySelector(".contact").scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
 });
 ;
 function checkScroll() {
@@ -210,6 +220,7 @@ let navItem = document.querySelectorAll('.nav__item');
 let body = document.querySelector('body');
 
 
+
 burgerBtn.addEventListener("click", function () {
   nav.classList.toggle("mobile");
   
@@ -233,7 +244,6 @@ for (let i of navItem) {
     }
   });
 }
-
 ;
 let contentItem = document.querySelectorAll(".content__item");
 

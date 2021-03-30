@@ -20,11 +20,21 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelector(".main__scroll").addEventListener("click", function () {
-        document.querySelector('.about').scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
+  document
+    .querySelector(".main__scroll")
+    .addEventListener("click", function () {
+      document.querySelector(".about").scrollIntoView({
+        behavior: "smooth",
+        block: "start",
       });
+    });
 
+  document
+    .querySelector(".user__button button")
+    .addEventListener("click", function () {
+      document.querySelector(".contact").scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
 });
