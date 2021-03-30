@@ -107,9 +107,9 @@
     }
   }
 
-  svg {
+  img {
     transition: all 0.3s;
-    width: 300px;
+    width: auto;
     height: 300px;
   }
   &:hover {
@@ -123,8 +123,8 @@
       }
     }
     .content__item-img {
-      svg {
-        width: 350px;
+      img {
+        width: auto;
         height: 350px;
       }
 

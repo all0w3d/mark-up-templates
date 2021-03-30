@@ -8,7 +8,6 @@ main {
   position: relative;
 }
 .user__photo {
-  
   padding-bottom: 15px;
 }
 
@@ -76,8 +75,6 @@ button {
   }
 }
 
-
-
 .main__scroll {
   position: absolute;
   bottom: 0;
@@ -136,6 +133,14 @@ button {
   overflow: hidden;
 
   .bg__item {
+    object {
+      color: blue;
+      fill: #fff;
+      svg {
+        fill: #fff;
+        color: blue;
+      }
+    }
     position: absolute;
 
     svg {
@@ -260,7 +265,6 @@ button {
 }
 
 .to-top-btn {
-  
   svg {
     height: 40px;
     width: 40px;
@@ -272,7 +276,7 @@ button {
     margin-bottom: 50px;
     position: fixed;
     cursor: pointer;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     &:hover {
       fill: $red;
       opacity: 1;
@@ -280,4 +284,3 @@ button {
     z-index: 100;
   }
 }
-

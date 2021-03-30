@@ -401,6 +401,16 @@ button:hover {
   position: absolute;
 }
 
+.main__bg .bg__item object {
+  color: blue;
+  fill: #fff;
+}
+
+.main__bg .bg__item object svg {
+  fill: #fff;
+  color: blue;
+}
+
 .main__bg .bg__item svg {
   height: 20px;
   width: 20px;
@@ -567,9 +577,9 @@ button:hover {
   margin-bottom: 50px;
   position: fixed;
   cursor: pointer;
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   z-index: 100;
 }
 
@@ -593,9 +603,9 @@ button:hover {
       align-self: center;
 }
 
-.about__img svg {
-  height: 150px;
-  width: 150px;
+.about__img img {
+  height: 110px;
+  width: 110px;
 }
 
 .about__message {
@@ -1042,11 +1052,11 @@ button:hover {
   fill: white;
 }
 
-.content__item svg {
+.content__item img {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  width: 300px;
+  width: auto;
   height: 300px;
 }
 
@@ -1066,8 +1076,8 @@ button:hover {
   opacity: 0.3;
 }
 
-.content__item:hover .content__item-img svg {
-  width: 350px;
+.content__item:hover .content__item-img img {
+  width: auto;
   height: 350px;
 }
 
@@ -1117,10 +1127,11 @@ button:hover {
       align-self: center;
 }
 
-.plans__item svg {
+.plans__item img {
   padding-bottom: 20px;
   -ms-flex-item-align: center;
       align-self: center;
+  max-width: 70px;
 }
 
 .plans__item:nth-child(2) {
@@ -1248,11 +1259,13 @@ button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
 }
 
-.clients__logos svg {
-  width: 70px;
-  height: 50px;
+.clients__logos img {
   cursor: pointer;
 }
 
@@ -1342,7 +1355,7 @@ button:hover {
   margin-bottom: 10px;
 }
 
-.posts__item svg {
+.posts__item img {
   height: auto;
   width: 100%;
   -ms-flex-item-align: center;

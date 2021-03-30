@@ -75,8 +75,6 @@ $(document).ready(function(){
     $('.clients__slider').removeClass('d-none');
   });;
 window.addEventListener("DOMContentLoaded", () => {
-
-  
   let selectorArr = [
     "main",
     ".about",

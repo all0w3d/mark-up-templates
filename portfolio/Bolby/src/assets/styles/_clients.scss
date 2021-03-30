@@ -9,7 +9,6 @@
   flex-direction: column;
   text-align: center;
   padding: 50px;
-  
 
   img {
     max-width: 120px;
@@ -40,12 +39,11 @@
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  
-  svg {
-    width: 70px;
-    height: 50px;
+  align-items: center;
+  margin-top: 30px;
+
+  img {
     cursor: pointer;
-    
   }
 
   .logo__item {
@@ -53,7 +51,6 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-     
   }
 }
 
@@ -74,7 +71,6 @@
     button {
       background-color: $red;
       min-width: 35px;
-      
     }
   }
 }
@@ -82,11 +78,6 @@
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
 
 .d-none {
   display: none;

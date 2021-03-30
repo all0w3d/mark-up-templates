@@ -7,9 +7,9 @@
 .about__img {
   align-self: center;
 
-  svg {
-    height: 150px;
-    width: 150px;
+  img {
+    height: 110px;
+    width: 110px;
   }
 }
 
@@ -30,11 +30,9 @@
 }
 
 .message__col {
-  
   &:last-child {
     :nth-child(1) {
       .loading {
-        
         .loading__item {
           width: 0;
           transition: all 1s ease-in;
@@ -60,9 +58,7 @@
   }
 }
 
-
 .loading-animation {
-  
   &:last-child {
     :nth-child(1) {
       .loading {
@@ -90,11 +86,6 @@
     }
   }
 }
-
-
-
-
-
 
 .loading {
   margin-bottom: 20px;
