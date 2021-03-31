@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+function scrollToPage() {
   let selectorArr = [
     "main",
     ".about",
@@ -25,7 +25,6 @@ window.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", function () {
       document.querySelector(".about").scrollIntoView({
         behavior: "smooth",
-        block: "start",
       });
     });
 
@@ -34,7 +33,6 @@ window.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", function () {
       document.querySelector(".contact").scrollIntoView({
         behavior: "smooth",
-        block: "start",
       });
     });
-});
+}

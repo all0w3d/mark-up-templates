@@ -1096,10 +1096,6 @@ button:hover {
       align-self: center;
 }
 
-.less-btn {
-  display: none;
-}
-
 .plans__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1282,40 +1278,50 @@ button:hover {
   margin-bottom: 30px;
 }
 
-.slick-dots button {
+.splide__pagination li {
+  padding-right: 10px;
+}
+
+.splide__pagination li button {
   all: unset;
   font-size: 0;
-  min-width: 10px;
-  min-height: 5px;
+  width: 10px;
+  height: 5px;
   background-color: lightgray;
   border-radius: 10px;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin-right: 10px;
 }
 
-.slick-dots {
-  cursor: pointer;
-  padding: 20px 0;
+.splide__pagination__page.is-active {
+  all: unset;
+  background: #ff4c60;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.slick-dots .slick-active button {
+.splide__arrow {
   background-color: #ff4c60;
-  min-width: 35px;
 }
 
-.slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.splide__arrow svg {
+  fill: #fff;
+  text-shadow: 2px 2px 5px black;
 }
 
 .d-none {
   display: none;
+}
+
+.splide {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
 }
 
 .posts__body {
@@ -3319,6 +3325,10 @@ section {
 }
 
 @media screen and (max-width: 700px) {
+  .splide__arrow {
+    display: none;
+  }
+
   .plans__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

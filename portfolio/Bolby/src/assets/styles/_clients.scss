@@ -54,31 +54,43 @@
   }
 }
 
-.slick-dots button {
+.splide__pagination li {
+  padding-right: 10px;
+}
+
+.splide__pagination li button {
   all: unset;
   font-size: 0;
-  min-width: 10px;
-  min-height: 5px;
+  width: 10px;
+  height: 5px;
   background-color: rgb(211, 211, 211);
   border-radius: 10px;
   transition: all 0.5s ease;
-  margin-right: 10px;
 }
-.slick-dots {
-  cursor: pointer;
-  padding: 20px 0;
-  .slick-active {
-    button {
-      background-color: $red;
-      min-width: 35px;
-    }
+
+.splide__pagination__page.is-active {
+  all: unset;
+  background: $red;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.splide__arrow {
+  background-color: $red;
+  svg {
+    fill: #fff;
+    text-shadow: 2px 2px 5px black;
   }
-}
-.slick-dots {
-  display: flex;
-  justify-content: center;
 }
 
 .d-none {
   display: none;
+}
+
+.splide {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
 }
