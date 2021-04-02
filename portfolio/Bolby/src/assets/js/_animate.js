@@ -15,3 +15,20 @@ const animateCSS = (element, animation, prefix = "animate__") =>
 
     node.addEventListener("animationend", handleAnimationEnd, { once: true });
   });
+
+function animations() {
+  let j = 0;
+
+  document.querySelectorAll(".posts__item").forEach((post) => {
+    post.setAttribute("data-aos-delay", `${j}`);
+    j += 200;
+  });
+
+  document
+    .querySelectorAll(".title, .experience__item-p, .posts__item")
+    .forEach((i) => {
+      i.setAttribute("data-aos", "fade-up");
+      i.setAttribute("data-aos-duration", "1000");
+      i.setAttribute("data-aos-once", "true");
+    });
+}
