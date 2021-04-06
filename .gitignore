@@ -1,12 +1,10 @@
 training/
-MyWebsite/
 node_modules/*
 node_modules/
 .vscode/*
 */.vscode/*
 */.vscode/
 .vscode/
-CV website/
 /hints/*
 hints/
 *.rar

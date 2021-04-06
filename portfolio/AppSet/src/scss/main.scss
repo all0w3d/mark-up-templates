@@ -1,0 +1,24 @@
+@import "_fonts";
+@import "_mixins";
+@import "_settings";
+@import "_vars";
+@import "_vendor";
+@import "_fonts";
+@import "modules/header";
+@import "modules/title";
+
+
+
+.wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    
+}
+
+body {
+    background-image: url(../img/hero-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
