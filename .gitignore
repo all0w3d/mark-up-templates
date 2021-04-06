@@ -1,12 +1,5 @@
-training/
-node_modules/*
+
 node_modules/
-.vscode/*
-*/.vscode/*
-*/.vscode/
 .vscode/
-/hints/*
-hints/
 *.rar
 .jshintrc
-.gitignore
