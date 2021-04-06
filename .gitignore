@@ -9,3 +9,4 @@ node_modules/
 hints/
 *.rar
 .jshintrc
+.gitignore
