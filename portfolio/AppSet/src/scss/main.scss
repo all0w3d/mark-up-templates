@@ -6,19 +6,19 @@
 @import "_fonts";
 @import "modules/header";
 @import "modules/title";
-
-
+@import "modules/app";
+@import "modules/ui";
 
 .wrapper {
-    max-width: 1110px;
-    margin: 0 auto;
-    
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
-body {
-    background-image: url(../img/hero-1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+
+.text-title {
+    font-size: 46px;
+    font-weight: 700;
+    padding: 100px 0 20px;
+    text-align: center;
 }
 

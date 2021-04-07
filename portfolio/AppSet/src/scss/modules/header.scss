@@ -1,11 +1,15 @@
 header {
   height: 120px;
+  transition: all .3s ease;
+  z-index: 3;
 }
 .header__logo {
-  width: 30%;
-  img {
-    max-width: 120px;
-  }
+    background-image: url(../img/logo-black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 40px;
+    width: 100px;
 }
 .nav__item {
 }
@@ -104,5 +108,31 @@ header {
   &:hover {
     background-color: #62cc7b;
     color: #fff;
+  }
+}
+
+
+.header-scrolled {
+  background-color: #1f1f1f;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  transition: all .3s ease;
+  
+ .header {
+  height: 80px;
+ }
+  .header__logo {
+    
+    background-image: url(../img/footer-logo-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  nav {
+    
+    .nav__item {
+      color: #fff;
+    }
   }
 }
