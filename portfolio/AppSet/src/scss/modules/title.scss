@@ -5,16 +5,15 @@ body {
 }
 
 .title {
-  background: no-repeat url(../img/hero-1-img.png);
+  
   background-position: 110% 75%;
-  height: 800px;
+  
   display: flex;
   align-items: center;
 }
 
 .title__container {
   display: flex;
-
   background-size: contain;
 }
 
@@ -49,5 +48,15 @@ body {
         margin-right: 10px;
       }
     }
+  }
+}
+
+
+.title__img {
+  display: flex;
+  align-items: center;
+  img {
+    width: 100%;
+    height: auto;
   }
 }

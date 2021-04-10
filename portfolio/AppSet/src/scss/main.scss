@@ -1,3 +1,4 @@
+@import "../../node_modules/tiny-slider/dist/tiny-slider.css";
 @import "_fonts";
 @import "_mixins";
 @import "_settings";
@@ -8,6 +9,13 @@
 @import "modules/title";
 @import "modules/app";
 @import "modules/ui";
+@import "modules/organize";
+@import "modules/customers";
+@import "modules/landing";
+@import "modules/contact";
+@import "modules/footer";
+@import "modules/media";
+
 
 .wrapper {
   max-width: 1110px;
@@ -19,6 +27,5 @@
     font-size: 46px;
     font-weight: 700;
     padding: 100px 0 20px;
-    text-align: center;
 }
 

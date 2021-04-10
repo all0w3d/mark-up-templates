@@ -1,0 +1,47 @@
+.organize {
+    overflow: hidden;
+}
+.wrapper {
+}
+.organize__inner {
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 100px;
+    
+    
+}
+.organize__text {
+    text-align: start;
+    flex: 0 0 45%;
+}
+.text-title {
+}
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #505050;
+}
+.text__footer {
+    display: flex;
+    align-items: center;
+    img {
+        max-height: 40px;
+        &:first-child {
+            transform: rotate(90deg);
+            max-height: 50px;
+        }
+    }
+    font-style: italic;
+    margin-top: 30px;
+}
+.organize__img {
+    
+    right: 0;
+    max-width: 900px;
+    align-self: center;
+    
+    img {
+        max-height: 700px;
+    }
+}
+
