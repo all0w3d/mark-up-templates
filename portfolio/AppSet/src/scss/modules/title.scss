@@ -5,9 +5,8 @@ body {
 }
 
 .title {
-  
   background-position: 110% 75%;
-  
+
   display: flex;
   align-items: center;
 }
@@ -51,10 +50,10 @@ body {
   }
 }
 
-
 .title__img {
   display: flex;
   align-items: center;
+  margin: 0 -350px 0 0;
   img {
     width: 100%;
     height: auto;

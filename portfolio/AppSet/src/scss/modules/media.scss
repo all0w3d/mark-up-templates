@@ -15,20 +15,18 @@
   }
 }
 
-
 @media (max-width: 900px) {
-    .landing__inner {
-      flex-direction: column;
-      .landing__img {
-          order: 1;
-          align-self: center;
-          
-          img {
-            margin-bottom: -4px;
-          }
+  .landing__inner {
+    flex-direction: column;
+    .landing__img {
+      order: 1;
+      align-self: center;
+
+      img {
+        margin-bottom: -4px;
       }
     }
-    
+  }
 }
 
 @media (max-width: 800px) {
@@ -54,18 +52,58 @@
     }
   }
   .header {
-    nav, button {
+    nav,
+    button {
       display: none;
     }
   }
   .burger {
-      display: inline-block;
+    display: inline-block;
   }
 
   form {
-      input, button {
-          width: 250px;
-      }
+    input,
+    button {
+      width: 250px;
+    }
   }
-  
+}
+
+@media (max-width: 450px) {
+  .app__inner .app__img {
+    padding: 0;
+  }
+  .title__buttons {
+    flex-direction: column;
+  }
+  .app__logos {
+    padding: 30px 10px;
+  }
+  .counter__item {
+    font-size: 20px;
+    .counter__num {
+      font-size: 50px;
+    }
+  }
+  .app__counter {
+    padding-bottom: 50px;
+  }
+  .slider {
+    margin: 0 auto;
+  }
+
+  .tns-nav {
+    padding-top: 50px;
+  }
+  .text-title {
+    padding: 50px 0 20px;
+  }
+
+  .title__img {
+    margin: 0 -70px;
+  }
+
+  .title .wrapper {
+    overflow: hidden;
+  }
 }

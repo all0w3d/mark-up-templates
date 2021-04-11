@@ -1,12 +1,11 @@
 function scrollToPage() {
   let selectorArr = [
-    "main",
-    ".about",
-    ".services",
-    ".experience",
-    ".recent",
-    ".posts",
-    ".contact",
+    ".title",
+    ".app",
+    ".ui",
+    ".organize",
+    ".customers",
+    ".landing",
   ];
 
   document.querySelectorAll(".nav__item").forEach((item, i) => {
@@ -36,6 +35,3 @@ function scrollToPage() {
       });
     });
 }
-
-
-export default scrollToPage;

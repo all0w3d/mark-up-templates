@@ -79,9 +79,10 @@ header {
 
   &:hover {
     .dropdown-content {
-      a {
+      div {
         padding: 12px 16px;
         margin-top: auto;
+        margin-right: 0;
       }
       height: 120px;
       opacity: 1;
