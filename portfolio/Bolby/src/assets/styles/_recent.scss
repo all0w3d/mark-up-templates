@@ -20,14 +20,17 @@
 
 .recent__content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .content__item {
   display: flex;
+  
   width: 30%;
   background-color: white;
-  margin: 0 30px 30px 0;
+  margin: 15px 15px;
   border-radius: 30px;
   box-shadow: 0 0 25px rgba(216, 216, 216, 0.363);
   justify-content: center;
@@ -144,6 +147,7 @@
 .recent__button {
   width: 150px;
   align-self: center;
+  margin-top: 30px;
 }
 
 

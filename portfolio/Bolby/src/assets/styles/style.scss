@@ -23,13 +23,19 @@ $aos-distance: 50px;
 
 body {
   font-family: "Rubik", sans-serif;
+  
+}
+main, footer {
   background-color: #353353;
 }
 
 section {
+  
   display: flex;
   background-color: #f9f9ff;
   color: $font;
+  
+  
 }
 
 .title {

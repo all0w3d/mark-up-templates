@@ -37,5 +37,3 @@ function scrollToPage() {
     });
 }
 
-
-export default scrollToPage;

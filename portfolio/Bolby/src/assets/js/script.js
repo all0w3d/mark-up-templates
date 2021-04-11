@@ -11,7 +11,7 @@
 @@include("_btn.js");
 @@include("_filter.js");
 @@include("_slider.js");
-// @@include("_server.js");
+
 
 window.addEventListener("DOMContentLoaded", () => {
   parallaxMain();

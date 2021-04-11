@@ -125,6 +125,7 @@ function scrollToPage() {
       });
     });
 }
+
 ;
 function checkScroll() {
   let scrollPos = window.scrollY + 400;
@@ -400,7 +401,7 @@ function newTab() {
 function slider() {
     new Splide( '.splide').mount();
 };
-// ;
+
 
 window.addEventListener("DOMContentLoaded", () => {
   parallaxMain();
