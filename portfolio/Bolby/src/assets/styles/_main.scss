@@ -12,6 +12,7 @@ main {
 }
 
 .main__user {
+  z-index: 10;
   padding-top: 70px;
   display: flex;
   flex-direction: column;
@@ -28,7 +29,7 @@ main {
     p {
       margin-left: 6px;
       --animate-duration: 1.5s;
-      z-index: -1;
+     
     }
   }
 }
@@ -126,8 +127,8 @@ button {
 }
 
 .main__bg {
+  z-index: 0;
   position: absolute;
-  z-index: -1;
   height: 100%;
   width: 100%;
   overflow: hidden;

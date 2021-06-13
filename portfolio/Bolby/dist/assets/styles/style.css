@@ -255,6 +255,7 @@ main {
 }
 
 .main__user {
+  z-index: 10;
   padding-top: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,7 +284,6 @@ main {
 .main__user .user__job p {
   margin-left: 6px;
   --animate-duration: 1.5s;
-  z-index: -1;
 }
 
 .user__socials {
@@ -390,8 +390,8 @@ button:hover {
 }
 
 .main__bg {
+  z-index: 0;
   position: absolute;
-  z-index: -1;
   height: 100%;
   width: 100%;
   overflow: hidden;
